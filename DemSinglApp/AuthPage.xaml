@@ -1,0 +1,24 @@
+﻿<Page x:Class="DemSinglApp.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DemSinglApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1400"
+      Title="AuthPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 50">
+            <TextBlock Text="Логин" Width="175"></TextBlock>
+            <TextBox Name="txtUserName" Height="20" Width="175"></TextBox>
+
+            <TextBlock Text="Пароль" Width="175"></TextBlock>
+            <PasswordBox Name="txtPassword" Height="20" Width="175"></PasswordBox>
+
+            <Button Content="Вход" Name="BtnAuth" Height="30" Width="175"
+            Click="BtnAuth_Click" Margin="0 10 0 0"></Button>
+
+        </StackPanel>
+    </Grid>
+</Page>

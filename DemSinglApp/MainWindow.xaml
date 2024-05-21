@@ -1,0 +1,26 @@
+﻿<Window x:Class="DemSinglApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemSinglApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#aaa"></Grid>
+        <Image Source="/Resources/12.png" HorizontalAlignment="Left"></Image>
+        <TextBlock Text="ООО Полюс" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" ></TextBlock>
+
+        <Grid Grid.Row="2" Background="#bbb"></Grid>
+
+        <Frame Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered"></Frame>
+
+        <Button Name="BtnBack" Content="Назад" Height="30" Width="175" HorizontalAlignment="Right" Click="BtnBack_Click"></Button>
+    </Grid>
+</Window>

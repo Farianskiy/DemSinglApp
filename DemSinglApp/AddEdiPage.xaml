@@ -1,0 +1,43 @@
+﻿<Page x:Class="DemSinglApp.AddEdiPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DemSinglApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1400" 
+      Title="AddEdiPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="102*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="165*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="143*"/>
+            <ColumnDefinition Width="457*"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Вид оргтехники" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox Name="txtType" Text="{Binding EquipmentType}" Grid.Column="1" Height="20"></TextBox>
+        
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Модель" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox Name="txtModel" Text="{Binding Model}" Grid.Column="1" Grid.Row="1" Height="20"></TextBox>
+        
+        
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Описание проблемы" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox Name="txtDescription" Text="{Binding ProblemDescription}" Grid.Column="1" Grid.Row="2" Height="20"></TextBox>
+        
+  
+
+        <Button Name="BtnAdd" Content="Сохранить" Click="BtnAdd_Click" Grid.ColumnSpan="2" Height="30" Width="175" Grid.Row="5" HorizontalAlignment="Center"></Button>
+
+        
+
+
+
+    </Grid>
+</Page>
